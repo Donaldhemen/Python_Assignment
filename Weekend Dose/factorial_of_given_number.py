@@ -3,7 +3,7 @@ def factorial_of_given_number(number):
 
 	factorial= 1
 	
-	for count in range(1, number+1):
+	for count in range(number, 0, -1):
 		factorial *= count
 	return factorial
 

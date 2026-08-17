@@ -14,8 +14,11 @@ while(True):
 	match(atm_menu_choice):
 		case 1: 
 			deposit = int(input("Enter deposit amount: "))
-			balance = deposit + balance
-			print("Balance is: ", balance)
+			if (deposit > 0):
+			    balance = deposit + balance
+			    print("Balance is: ", balance)
+	        else :
+	            print("Invalid deposit amount")
 		case 2:
 			withdraw = int(input("Enter withdraw amount: "))
 			if balance >= withdraw:
