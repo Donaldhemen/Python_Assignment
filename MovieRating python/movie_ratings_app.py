@@ -1,4 +1,4 @@
-from movie_functions import movie_functions
+from movie_functions import MovieFunctions
 
 
 movies = []
@@ -6,7 +6,7 @@ movies = []
 
 def display_menu():
 
-    print("\n MOVIE RATING SYSTEM ")
+    print("\n Movie Ratings System ")
     print("1. Add a Movie")
     print("2. Rate a Movie")
     print("3. View Average Ratings")
@@ -21,8 +21,6 @@ def get_menu_choice():
 
         if 1 <= choice <= 4:
             return choice
-
-        print("Please enter a number between 1 and 4.")
 
 
 def find_movie(movie_name):
@@ -47,7 +45,7 @@ def add_movie():
         print("Movie already exists.")
         return
 
-    movie = MovieFunctions(movie_name)
+    movie = movie_functions(movie_name)
 
     movies.append(movie)
 
@@ -89,7 +87,7 @@ def view_average_ratings():
         print("No movies have been added yet.")
         return
 
-    print("\n AVERAGE RATINGS ")
+    print("\n Average Ratings")
 
     for movie in movies:
 

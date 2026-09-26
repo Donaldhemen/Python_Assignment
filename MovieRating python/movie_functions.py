@@ -1,7 +1,7 @@
 from datetime import datetime
 
 
-class movie_functions:
+class MovieFunctions:
 
     def __init__(self, movie_name):
         self.movie_name = movie_name
@@ -16,7 +16,7 @@ class movie_functions:
 
     def add_rating(self, rating):
 
-        if rating >= 1 and rating <= 5:
+        if 1 <= rating <= 5:
             self.ratings.append(rating)
 
     def get_average_rating(self):

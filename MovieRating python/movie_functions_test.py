@@ -1,13 +1,13 @@
 import unittest
 
-from movie_functions import movie_functions
+from movie_functions import MovieFunctions
 
 
 class movie_functions_test(unittest.TestCase):
 
     def setUp(self):
 
-        self.movie = movie_functions("Inception")
+        self.movie = MovieFunctions()
 
     def test_can_add_movie(self):
 
